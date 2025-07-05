@@ -1,0 +1,21 @@
+.fifth{
+    margin: 0;
+    padding: 50px;
+    text-align: center;
+    position:fixed;
+   
+    bottom:0;
+}
+.fourth{
+    background-image:url(../50dayscode/Day5/background.jpg);
+    
+}
+.first{
+    text-align: center;
+}
+.second{
+    text-align: center;
+}
+.third{
+    text-align: left;
+}
