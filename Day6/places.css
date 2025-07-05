@@ -1,0 +1,19 @@
+
+.jashu{
+background-image:url(../Day5/background.jpg) ;
+text-align: center;
+}
+.ten{
+    text-align: center;
+    
+    color:black;
+}
+.akshith {
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer {
+    
+    width: 100%;
+}
