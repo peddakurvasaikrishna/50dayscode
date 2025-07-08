@@ -1,0 +1,43 @@
+
+  .first{
+    text-align: center;
+
+}
+.second{
+    background-color: aquamarine;
+}
+.third{
+    text-align: left;
+    justify-content: left;
+    background-color: chartreuse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 12%;
+    border: 1px solid black;
+    width:250px;
+    height:500px;
+    
+    
+}
+button{
+    background-color: blue;
+    width:6.5cm;
+    padding:7px;
+}
+@media (max-width:320px){
+    .login form{
+        width:50px;
+        margin:20px auto;
+        text-align: center;
+    }
+}
+.five{
+    width:200px;
+    font-size:auto;
+}
+.six{
+    width:200px;
+    font-size: auto;
+}
