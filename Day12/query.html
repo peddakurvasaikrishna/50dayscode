@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>heading</h1>
+    <p class="text">one</p>
+    <p class="text">Two</p>
+    
+    <p class="text" id="demo">Three</p>
+    <button onclick="n()">click</button>
+    <script>
+        let n=()=>{
+        const paras=document.getElementsByTagName("p");
+        paras[0].innerHTML="changed! by index";
+        
+        const items=document.getElementsByClassName("text");
+        for(let i=0;i<items.length;i++){
+            items[i].style.color="blue";
+        
+        const para=document.getElementById("demo");
+        para.style.backgroundColor="yellow";
+        document.body.style.backgroundColor="green";
+        
+        }
+    }
+       </script> 
+</body>
+</html>
