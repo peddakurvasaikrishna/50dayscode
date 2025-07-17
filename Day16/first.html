@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="first"></p>
+    <script>
+        let people=[
+            {firstname:"john",lastname:"doe"},
+            {firstname:"sai",lastname:"krishna"},
+            {firstname:"hari",lastname:"krishna"}
+        ];
+        const peoplewithfullname=people.map(person=>{
+            return{...person,fullname: `${person.firstname} ${person.lastname}`};
+        });
+        console.log("original people:",people);
+        console.log("people with fullname", peoplewithfullname);
+    </script>
+    <p id="second"></p>
+    <script>
+        let electronics=[
+            {name:"iphone",price:"90000",category:"phone"},
+            {name:"Swift",price:"190000",category:"car"},
+            {name:"macbook",price:"7000",category:"laptop"}
+        ];
+        const wishlist=electronics.filter(item=>item.category=="phone" && item.price>=7000);
+        console.log(wishlist[0].name,...wishlist);
+    </script>
+</body>
+</html>
