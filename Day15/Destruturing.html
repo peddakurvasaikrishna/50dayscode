@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        const fruits=["apple","banana","mango"];
+        const[a,b,c]=fruits;
+        console.log(a);
+        console.log(b);
+        let numbers=[1,2,3,4];
+        let add=numbers.map(num => num+2);
+        console.log(add);
+        console.log(numbers);
+        const numbers1=[1,2,3,4];
+        const evennumbers=numbers1.filter(num => num%2==0);
+        console.log(evennumbers);
+        const numbers3=[1,2,3,4];
+        const sum=numbers3.reduce((acc,num)=>acc+num,0);
+        console.log(sum);
+        const arrayOfArrays=[[1,2],[3,4],[5,6]];
+        const flattenedArray=arrayOfArrays.reduce((accumulator,currentvalue)=>{
+            return accumulator.concat(currentvalue);
+             });
+        console.log(flattenedArray);
+        </script>
+        objects-->
+        <!-- <script>
+            let person={
+                name:"sai",
+                age:25,
+                Isstudent:true
+            };
+            console.log(person.name);
+            //nested objects
+            let student={
+                name:"anjali",
+                marks:{
+                    math:90,
+                    science:85,
+                }
+            };
+            console.log(student.marks.science);
+            //function with object
+            function printstudent(student){
+                console.log("student " +student.name+" is "+student.age+" yearsold.");
+            }
+            printstudent({name:"deekshu",age:19});
+            let books=[
+                {title:"js basics",price:300},
+                {title:"advanced js",price:500}
+            ];
+            console.log(books[1].title);
+        </script> --> 
+        <!-- <p id="cars"></p>
+        <script>
+    let cars={car:"TATA",model:"civic",year:2015}
+        document.getElementById("cars").innerHTML="Car:"+cars.car+ " Model:"+cars.model+ " Year:"+cars.year;
+    </script> -->
+    <p id="p"></p>
+    <script>
+        let person=[
+            {id:"123",name:"sai",age:20},
+            {id:"124",name:"krishna",age:21}
+        ];
+            let persons=person.map(per=>per.name);
+            document.getElementById("p").innerHTML+="name:" + persons +"  ";
+        
+    </script>
+    </body>
+    </html>
