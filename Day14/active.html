@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="myInput">
+    <p id="display"></p>
+        <script>
+            document.getElementById("myInput").addEventListener("input",function(){
+               document.getElementById("display").innerHTML=this.value;
+            });
+            document.getElementById("display").addEventListener("dblclick",function(){
+                this.style.color="red";
+            });
+            document.getElementById("myInput").addEventListener("focus",function(){
+                this.style.backgroundColor="green";
+            });
+             document.getElementById("display").addEventListener("dblclick",function(){
+                alert("double click");
+             });
+            document.getElementById("myInput").addEventListener("blur",function(){
+                this.style.backgroundColor="blue";
+            });   
+        </script>
+         <div style="display:flex; gap:10px">
+        <button style="width:50px;" id="click">-</button>
+        <p id="p">0</p>
+        <button style="width:50px;" id="click1">+</button>
+        
+         </div>
+        
+        <script>
+            let count=0;
+            document.getElementById("click").addEventListener("click",function(){
+                count--;
+                document.getElementById("p").innerHTML=count;
+            });
+            document.getElementById("click1").addEventListener("click",function(){
+                count++;
+                document.getElementById("p").innerHTML=count;
+            });
+        </script> -->
+        <script>
+            let fruits=["orange","banana"];
+            let fruit=fruits.push("grapes");
+            console.log(fruits);
+            let fruits1=["apple","banana","cherry"];
+            let numbers=[10,20,30,40,50];
+            let mixedData=["hello",123,true,{name:"alices"}];
+            console.log(fruits1);
+            console.log(numbers);
+            console.log(mixedData);
+            let fruits2=["apple","banana","cherry"];
+            console.log(fruits2[0]);
+            console.log(fruits2[10]);
+            let students=["alice","bob","charlie"];
+            console.log(students.length);
+            let empty=[];
+            console.log(empty.length);
+            let colors=["red","green","blue"];
+            console.log("original:",colors);
+            colors[1]="yellow";
+            console.log("modified",colors);
+            let fruits4=["apple","banana"];
+            let newlength=fruits4.push("cherry","date");
+            console.log(fruits4);
+            let colors1=["red","green","blue"];
+            let lastcolor=colors1.pop();
+            console.log(colors1);
+            console.log(lastcolor);
+            let numbers1=[3,4];
+            let newlength1=numbers1.unshift(1,2);
+            console.log(numbers1);
+            let days=["monday","tuesday","wednesday"];
+            let firstDay=days.shift();
+            console.log(days);
+            console.log(firstDay);
+            let groceries=["milk","bread","eggs"];
+            console.log(groceries.indexOf("bread"));
+            console.log(groceries.indexOf("milk"));
+            console.log(groceries.indexOf("yogurt"));
+        </script>
+</body>
+</html>
