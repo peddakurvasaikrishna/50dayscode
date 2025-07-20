@@ -1,0 +1,12 @@
+{
+    "name":"Alex",
+    "age":30,
+    "isStudent":false,
+    "courses":["history","math","physics"],
+    "address":{
+        "stret":"123 main st",
+        "city":"anytown"
+    },
+    "grades":null
+
+}
