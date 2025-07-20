@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+</head>
+<body>
+    <h1>Bank Account</h1>
+    <button id="deposit">Deposit</button>
+    <button id="withdraw">Withdraw</button>
+    <button id="check">Check Balance</button>
+    <p id="para"></p>
+    <script>
+        function createAccount(){
+            let balance=0;
+            return{
+                deposit:amount=>balance+=amount,
+                withdraw: amount=>balance -=amount,
+                getBalance:()=>balance
+            };
+        } 
+        const account=createAccount();
+         document.getElementById("deposit").addEventListener("click",function(){
+          const amount= Number(prompt("Enter the amount to deposit"));
+          account.deposit(amount);
+          document.getElementById("para").innerHTML=`Amount deposited is:${amount}`;
+            });
+        document.getElementById("withdraw").addEventListener("click",function(){
+          const amount= Number(prompt("Enter the amount to withdraw "));
+           account.withdraw(amount);
+           document.getElementById("para").innerHTML=`Amount withdrawn is:${amount}`;
+        });
+        document.getElementById("check").addEventListener("click",function(){
+            const bal=account.getBalance();
+            document.getElementById("para").innerHTML=`Current balance is:${bal}`;
+        });
+
+    </script>
+    
+    
+</body>
+</html>
