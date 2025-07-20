@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="second"></p>
+    <script>
+        // let objects=[
+        //     {name:"iphone",price:90000,category:"electronics",stock:18},
+        //     {name:"Swift",price:90000,category:"car",stock:3},
+        //     {name:"macbook",price:7000,category:"electronics",stock:10},
+        //     {name:"shirt",price:900,category:"clothes",stock:15},
+        //     {name:"notebooks",price:6000,category:"books",stock:5}
+        // ];
+        // console.log(objects);
+        // let choose=objects.filter(item=>item.category=="electronics");
+        // console.log(choose);
+        // let carts=objects.filter(item=>item.category=="electronics").map(item=>`productname:${item.name},displayprice:${item.price}`);
+        // console.log(carts);
+        // const Total = choose.reduce((acc, demo) => acc + demo.price , 0);
+        // console.log(Total);
+        setTimeout(()=>{
+            console.log("this runs after 3 seconds");
+        },3000);
+        setInterval(()=>{
+            console.log("repeatedly every 2 seconds");
+        },2000);
+        function outer(){
+            let name="js";
+            function inner(){
+                console.log("hello,"+name);
+            }
+            return inner;
+         }
+        const greet=outer();
+        greet();
+    </script>
+</body>
+</html>
