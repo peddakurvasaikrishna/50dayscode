@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Bank Account</h1>
+    <button id="de">Deposit</button>
+    <button id="wi">Withdraw</button>
+    <button id="ch">Check Balance</button>
+    <p id="p"></p>
+    <script>
+        
+        balance=0;
+        amount=0;
+        demount=0;
+        document.getElementById("de").addEventListener("click",function(){
+           amount=prompt("enter amount to deposit");
+           balance=balance+amount;
+           document.getElementById("p").innerHTML="amount deposit is:"+amount;
+        });
+        document.getElementById("wi").addEventListener("click",function(){
+           demount=prompt("enter amount to withdraw");
+           balance=amount-demount;
+            document.getElementById("p").innerHTML="amount withdraw is:"+demount;
+
+        });
+        document.getElementById("ch").addEventListener("click",function(){
+            document.getElementById("p").innerHTML="current balance is:"+balance;
+        });
+    </script>
+    
+</body>
+</html>
