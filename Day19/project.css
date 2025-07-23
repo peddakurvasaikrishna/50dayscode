@@ -1,0 +1,54 @@
+.first{
+    background-image: url("weather1.jpg");
+    background-size: cover;
+}
+.second{
+    text-align: center;
+    font-size: 70px;
+    color:red;
+}
+#cityInput{
+    align-items: center;
+}
+.sec{
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 20px;
+    background-color: lightblue;   
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border: 1px solid black;
+    }
+.sea{
+    margin-left: 20px;  
+    padding: 10px;
+    background-color: darkblue;             
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.sea:hover{
+    background-color: lightblue;
+    color: black;
+}
+.result{
+    margin-top: 20px;
+    padding: 20px;
+    background-color:honeydew;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+.tenth{
+    padding:10px;
+    width:300px;
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+
+}
